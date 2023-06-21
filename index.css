@@ -553,3 +553,7 @@ li {
 .active-link {
   color: var(--active-link);
 }
+
+.manage {
+  margin-bottom: 2rem;
+}
