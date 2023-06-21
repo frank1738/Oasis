@@ -289,12 +289,15 @@ a {
   border-bottom: 3px solid var(--active-link);
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
   padding: 2rem 1rem;
+  width: 100%;
 }
 
 .location-div {
   display: flex;
-  justify-content: space-between;
+  gap: 1rem;
   margin-bottom: 2rem;
+  width: 90%;
+  padding: 0 1.5rem;
 }
 
 .place {
