@@ -89,7 +89,6 @@ html {
 
 body {
   font-family: 'Raleway', sans-serif;
-  position: relative;
 }
 
 a {
@@ -147,10 +146,8 @@ a {
   color: var(--link-color);
   align-items: center;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  position: fixed;
+  position: sticky;
   top: 0%;
-  left: 0%;
-  right: 0;
   z-index: 20;
   background-color: #fff;
 }
