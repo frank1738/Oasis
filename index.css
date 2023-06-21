@@ -15,9 +15,10 @@
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
   --link-color: #7a6960;
-  --active-link: #eb5d1e;
+  --active-link: rgb(26, 151, 245);
   --title-color: #4e4039;
   --text-color: #a08f86;
+  --theme-color: #cce4f7;
 }
 
 html {
@@ -95,10 +96,10 @@ a {
 }
 
 .contact-link > a {
-  background-color: #eb5d1e;
+  background-color: var(--active-link);
   padding: 10px 25px;
   border-radius: 50px;
-  border: 1px solid #eb5d1e;
+  border: 1px solid var(--active-link);
   color: white;
   transition: all 0.3s ease-in-out;
 }
@@ -140,7 +141,7 @@ a {
 .tool-bar {
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 1rem;
+  padding: 1rem 1rem;
   font-size: 30px;
   color: var(--link-color);
   align-items: center;
@@ -152,7 +153,7 @@ a {
 }
 
 .headline {
-  background-color: #fef8f5;
+  background-color: var(--theme-color);
   border-bottom: 2px solid #fcebe3;
   padding: 3.5rem 1rem;
   display: flex;
@@ -274,18 +275,18 @@ a {
 }
 
 .mission {
-  background-color: hsl(250, 60%, 99%);
+  background-color: var(--theme-color);
 }
 
 .team {
-  background-color: #fef8f5;
+  background-color: #fff;
 }
 
 .map {
   width: 100%;
   margin-top: 2rem;
-  border-top: 3px solid #eb5d1e;
-  border-bottom: 3px solid #eb5d1e;
+  border-top: 3px solid var(--active-link);
+  border-bottom: 3px solid var(--active-link);
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
   padding: 2rem 1rem;
 }
@@ -307,13 +308,13 @@ a {
   align-items: center;
   width: 50px;
   height: 50px;
-  background-color: #fdf1ec;
+  background-color: var(--theme-color);
   border-radius: 50%;
 }
 
 .location-icon {
   font-size: 30px;
-  color: #eb5d1e;
+  color: var(--active-link);
 }
 
 .place > h3 {
@@ -327,11 +328,19 @@ a {
   color: var(--text-color);
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form > div {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
   text-align: start;
+  padding: 0 1rem;
+  width: 90%;
 }
 
 .form > div > input {
@@ -342,6 +351,7 @@ a {
   font-size: 1.2rem;
   border-radius: 2px;
   font-family: 'Raleway', sans-serif;
+  width: 100%;
 }
 
 .form > div > textarea {
@@ -356,12 +366,13 @@ a {
 .form > button {
   margin-top: 1rem;
   cursor: pointer;
+  justify-self: start;
 }
 
 .form-div {
   margin-top: 2rem;
-  border-top: 3px solid #eb5d1e;
-  border-bottom: 3px solid #eb5d1e;
+  border-top: 3px solid var(--active-link);
+  border-bottom: 3px solid var(--active-link);
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
   padding: 2rem 0.5rem;
 }
@@ -371,7 +382,7 @@ li {
 }
 .footer {
   padding: 3.5rem 1rem;
-  background-color: #fcebe3;
+  background-color: var(--theme-color);
 }
 
 .oasis > h2 {
@@ -428,7 +439,7 @@ li {
     margin-right: 1rem;
   }
   .outline {
-    color: #eb5d1e;
+    color: var(--active-link);
     font-family: Arial, Helvetica, sans-serif;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fcebe3;
@@ -554,6 +565,8 @@ li {
   color: var(--active-link);
 }
 
-.manage {
-  margin-bottom: 2rem;
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 90%;
 }
