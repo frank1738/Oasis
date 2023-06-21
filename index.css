@@ -141,7 +141,7 @@ a {
 .tool-bar {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 1rem;
+  padding: 0.3rem 1rem;
   font-size: 30px;
   color: var(--link-color);
   align-items: center;
@@ -289,7 +289,6 @@ a {
   border-bottom: 3px solid var(--active-link);
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
   padding: 2rem 1rem;
-  width: 100%;
 }
 
 .location-div {
@@ -358,12 +357,12 @@ a {
 }
 
 .form > div > textarea {
-  font-size: 1.2rem;
-  padding: 12px;
   outline: none;
   font-family: 'Raleway', sans-serif;
-  margin-top: 0.2rem;
   border: 1px solid #dee2e6;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-top: 1rem;
 }
 
 .form > button {
@@ -374,10 +373,6 @@ a {
 
 .form-div {
   margin-top: 2rem;
-  border-top: 3px solid var(--active-link);
-  border-bottom: 3px solid var(--active-link);
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-  padding: 2rem 0.5rem;
 }
 
 li {
@@ -540,7 +535,7 @@ li {
 
   .desktop {
     display: flex;
-    padding: 1.5rem 3rem;
+    padding: 0.5rem 3rem;
     justify-content: space-between;
     align-items: center;
     position: sticky;
@@ -569,7 +564,11 @@ li {
 }
 
 .logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 90%;
+  width: 50px;
+  height: 50px;
+}
+
+.tool-bar > a {
+  display: flex;
+  align-items: center;
 }
