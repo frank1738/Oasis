@@ -342,7 +342,7 @@ a {
   margin-top: 1rem;
   text-align: start;
   padding: 0 1rem;
-  width: 90%;
+  width: 100%;
 }
 
 .form > div > input {
@@ -564,8 +564,8 @@ li {
 }
 
 .logo {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
 }
 
 .tool-bar > a {
