@@ -184,7 +184,7 @@ a {
 
 .show {
   opacity: 1;
-  animation: up 2s;
+  animation: up 1s;
 }
 
 @keyframes up {
